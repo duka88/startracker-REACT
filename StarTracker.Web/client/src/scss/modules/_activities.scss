@@ -1,0 +1,27 @@
+.card__body--activity {
+	padding: 0 0 0 4px;
+	background-color: $white;
+	@include make-between;
+	flex-direction: column;
+	width: 100%;
+}
+.activity {
+	width: 100%;
+	background-color: $yellow;
+	border-radius: 20px;
+	padding: 20px 20px 22px;
+	margin-bottom: 20px;
+	@include media-breakpoint-down(md) {
+		padding: 16px 20px 18px;
+		margin-bottom: 19px;
+	}
+}
+.activity__text {
+	font-size: 18px;
+	color: $white;
+	width: 100%;
+	text-align: center;
+	@include media-breakpoint-down(sm) {
+		font-size: 16px;
+	}
+}

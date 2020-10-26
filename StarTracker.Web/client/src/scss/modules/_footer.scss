@@ -1,0 +1,26 @@
+//----------  footer
+//------------------------------------------------------------------------------
+.footer {
+	padding: 45px 0 11px;
+	color: $white;
+	margin-left: 269px;
+	@include media-breakpoint-down(lg) {
+		margin-left: 0;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 85px 0 11px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 69px 0 11px;
+	}
+	@include media-breakpoint-down(xxs) {
+		padding: 45px 0 0;
+	}
+}
+.footer__text {
+	color: $grey-3;
+	font-size: 13px;
+	@include media-breakpoint-down(xxs) {
+		font-size: 10px;
+	}
+}

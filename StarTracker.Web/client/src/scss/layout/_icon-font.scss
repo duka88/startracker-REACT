@@ -1,0 +1,281 @@
+@font-face {
+	font-family: 'svgicons';
+	src: url('./assets/fonts/svgicons-all.woff') format('woff'),
+		url('./assets/fonts/svgicons-all.ttf') format('ttf');
+}
+
+@mixin font-styles {
+	font-family: 'svgicons';
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+	display: block;
+	line-height: 1;
+}
+
+%font {
+	@include font-styles;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == ico-achievements {
+		$char: '\E900';
+	}
+	@if $filename == ico-article {
+		$char: '\E901';
+	}
+	@if $filename == ico-back {
+		$char: '\E902';
+	}
+	@if $filename == ico-basketball {
+		$char: '\E903';
+	}
+	@if $filename == ico-bicycle {
+		$char: '\E904';
+	}
+	@if $filename == ico-body-weight {
+		$char: '\E905';
+	}
+	@if $filename == ico-box {
+		$char: '\E906';
+	}
+	@if $filename == ico-calendar {
+		$char: '\E907';
+	}
+	@if $filename == ico-cardio {
+		$char: '\E908';
+	}
+	@if $filename == ico-chevron-down {
+		$char: '\E909';
+	}
+	@if $filename == ico-climbing {
+		$char: '\E90A';
+	}
+	@if $filename == ico-cross {
+		$char: '\E90B';
+	}
+	@if $filename == ico-crossfit {
+		$char: '\E90C';
+	}
+	@if $filename == ico-dance {
+		$char: '\E90D';
+	}
+	@if $filename == ico-diving {
+		$char: '\E90E';
+	}
+	@if $filename == ico-dog {
+		$char: '\E90F';
+	}
+	@if $filename == ico-download {
+		$char: '\E910';
+	}
+	@if $filename == ico-fast-walk {
+		$char: '\E911';
+	}
+	@if $filename == ico-football {
+		$char: '\E912';
+	}
+	@if $filename == ico-functional-training {
+		$char: '\E913';
+	}
+	@if $filename == ico-golf {
+		$char: '\E914';
+	}
+	@if $filename == ico-gym {
+		$char: '\E915';
+	}
+	@if $filename == ico-home {
+		$char: '\E916';
+	}
+	@if $filename == ico-info {
+		$char: '\E917';
+	}
+	@if $filename == ico-karate {
+		$char: '\E918';
+	}
+	@if $filename == ico-next {
+		$char: '\E919';
+	}
+	@if $filename == ico-pencil {
+		$char: '\E91A';
+	}
+	@if $filename == ico-plus {
+		$char: '\E91B';
+	}
+	@if $filename == ico-profile {
+		$char: '\E91C';
+	}
+	@if $filename == ico-questionmark {
+		$char: '\E91D';
+	}
+	@if $filename == ico-running {
+		$char: '\E91E';
+	}
+	@if $filename == ico-score {
+		$char: '\E91F';
+	}
+	@if $filename == ico-share {
+		$char: '\E920';
+	}
+	@if $filename == ico-skating {
+		$char: '\E921';
+	}
+	@if $filename == ico-skiing {
+		$char: '\E922';
+	}
+	@if $filename == ico-squash {
+		$char: '\E923';
+	}
+	@if $filename == ico-swimming {
+		$char: '\E924';
+	}
+	@if $filename == ico-x {
+		$char: '\E925';
+	}
+	@if $filename == ico-yoga {
+		$char: '\E926';
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %font;
+		} @else {
+			@include font-styles;
+		}
+		content: font-char($filename);
+	}
+}
+
+[class*='font-ico'] {
+	display: inline-block;
+}
+
+.font-ico-achievements {
+	@include font(ico-achievements);
+}
+.font-ico-article {
+	@include font(ico-article);
+}
+.font-ico-back {
+	@include font(ico-back);
+}
+.font-ico-basketball {
+	@include font(ico-basketball);
+}
+.font-ico-bicycle {
+	@include font(ico-bicycle);
+}
+.font-ico-body-weight {
+	@include font(ico-body-weight);
+}
+.font-ico-box {
+	@include font(ico-box);
+}
+.font-ico-calendar {
+	@include font(ico-calendar);
+}
+.font-ico-cardio {
+	@include font(ico-cardio);
+}
+.font-ico-chevron-down {
+	@include font(ico-chevron-down);
+}
+.font-ico-climbing {
+	@include font(ico-climbing);
+}
+.font-ico-cross {
+	@include font(ico-cross);
+}
+.font-ico-crossfit {
+	@include font(ico-crossfit);
+}
+.font-ico-dance {
+	@include font(ico-dance);
+}
+.font-ico-diving {
+	@include font(ico-diving);
+}
+.font-ico-dog {
+	@include font(ico-dog);
+}
+.font-ico-download {
+	@include font(ico-download);
+}
+.font-ico-fast-walk {
+	@include font(ico-fast-walk);
+}
+.font-ico-football {
+	@include font(ico-football);
+}
+.font-ico-functional-training {
+	@include font(ico-functional-training);
+}
+.font-ico-golf {
+	@include font(ico-golf);
+}
+.font-ico-gym {
+	@include font(ico-gym);
+}
+.font-ico-home {
+	@include font(ico-home);
+}
+.font-ico-info {
+	@include font(ico-info);
+}
+.font-ico-karate {
+	@include font(ico-karate);
+}
+.font-ico-next {
+	@include font(ico-next);
+}
+.font-ico-pencil {
+	@include font(ico-pencil);
+}
+.font-ico-plus {
+	@include font(ico-plus);
+}
+.font-ico-profile {
+	@include font(ico-profile);
+}
+.font-ico-questionmark {
+	@include font(ico-questionmark);
+}
+.font-ico-running {
+	@include font(ico-running);
+}
+.font-ico-score {
+	@include font(ico-score);
+}
+.font-ico-share {
+	@include font(ico-share);
+}
+.font-ico-skating {
+	@include font(ico-skating);
+}
+.font-ico-skiing {
+	@include font(ico-skiing);
+}
+.font-ico-squash {
+	@include font(ico-squash);
+}
+.font-ico-swimming {
+	@include font(ico-swimming);
+}
+.font-ico-x {
+	@include font(ico-x);
+}
+.font-ico-yoga {
+	@include font(ico-yoga);
+}
+

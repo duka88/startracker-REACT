@@ -1,0 +1,120 @@
+.scores-table {
+	width: 100%;
+}
+.card--user-score {
+	margin-top: 62px;
+	@include media-breakpoint-down(md) {
+		margin-top: 48px;
+	}
+}
+.card__head--user-score {
+	@include media-breakpoint-down(md) {
+		text-align: center;
+		margin-bottom: 28px;
+	}
+}
+.card__body--user-score {
+	@include media-breakpoint-down(sm) {
+		padding: 34px 18px;
+	}
+}
+.scores-table__user {
+	@include make-start;
+	align-items: center;
+	height: 40.4px;
+	padding: 0 0 0 29px;
+	.scores-table__user-name {
+		a {
+			color: $black;
+			@include hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 0 0 0 24px;
+	}
+	@include media-breakpoint-down(xxs) {
+		padding: 0;
+		justify-content: center;
+	}
+}
+.scores-table__head-row {
+	height: 28px;
+	vertical-align: baseline;
+}
+.scores-table__head-text {
+	font-size: 12px;
+	color: $grey-5;
+	letter-spacing: 1.25px;
+	@include media-breakpoint-down(sm) {
+		font-size: 10px;
+	}
+}
+.scores-table__place {
+	font-size: 12px;
+	color: $grey-5;
+	text-align: center;
+	@include media-breakpoint-down(xxs) {
+		font-size: 10px;
+	}
+}
+.scores-table__th-place {
+	width: 44px;
+	@include media-breakpoint-down(sm) {
+		width: 42px;
+	}
+}
+.scores-table__th-pionts {
+	width: 51px;
+	@include media-breakpoint-down(sm) {
+		width: 43px;
+	}
+}
+.scores-table__th-name {
+	width: calc(100% - 95px);
+	text-align: left;
+	padding: 0 0 0 28px;
+	@include media-breakpoint-down(sm) {
+		width: calc(100% - 87px);
+		padding: 0 0 0 22px;
+	}
+	@include media-breakpoint-down(xxs) {
+		padding: 0;
+		text-align: center;
+	}
+}
+.scores-table__row {
+	&:nth-child(odd) {
+		.scores-table__data {
+			background-color: $white;
+		}
+	}
+}
+.scores-table__data {
+	vertical-align: middle;
+	font-size: 14px;
+	@include media-breakpoint-down(xxs) {
+		font-size: 10px;
+	}
+}
+.scores-table__data--palce {
+	border-radius: 8px 0 0 8px;
+}
+.scores-table__data--score {
+	border-radius: 0 8px 8px 0;
+}
+.scores-table__img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-right: 12px;
+	@include media-breakpoint-down(xxs) {
+		width: 20px;
+		height: 20px;
+	}
+}
+.scores-table__score {
+	text-align: center;
+	color: $yellow;
+}

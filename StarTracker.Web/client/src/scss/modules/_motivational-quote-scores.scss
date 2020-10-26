@@ -1,0 +1,39 @@
+.score-quote {
+	width: 100%;
+	background-color: $yellow;
+	@include make-center;
+	border-radius: 20px;
+	height: 309px;
+	margin-top: 60px;
+	padding: 31px 30px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 38px;
+	}
+	@include media-breakpoint-down(xxs) {
+		height: 285px;
+		padding: 15px;
+	}
+}
+.score-quote__logo {
+	height: 73px;
+}
+.score-quote__text-wrap {
+	margin: 10px 0 20px;
+	width: 100%;
+}
+.score-quote__title {
+	font-size: 22px;
+	font-family: $gilroy-bold;
+	color: $white;
+	text-align: center;
+	line-height: 1.18;
+	@include media-breakpoint-down(xxs) {
+		font-size: 18px;
+	}
+}
+.score-quote__text {
+	font-size: 16px;
+	color: $white;
+	text-align: center;
+	margin-top: 11px;
+}

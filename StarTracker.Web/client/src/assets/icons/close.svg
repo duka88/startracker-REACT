@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-948 -178L492 -178L492 1348L-948 1348Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.349;fill: none;stroke: #2c2543;stroke-linecap:round;stroke-width: 1.5 } 
+	</style>
+	<g id="Dashboard" clip-path="url(#cp1)">
+		<g id="Popup - Technical">
+			<g id="background">
+				<path id="delete" class="shp0" d="M1.54 1.54L12.48 12.48M1.54 12.48L12.48 1.54" />
+			</g>
+		</g>
+	</g>
+</svg>

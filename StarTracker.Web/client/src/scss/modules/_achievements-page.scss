@@ -1,0 +1,6 @@
+.row--achievements {
+	margin-top: 23px;
+	@include media-breakpoint-down(md) {
+		margin-top: 0;
+	}
+}

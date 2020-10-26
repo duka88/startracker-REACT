@@ -1,0 +1,166 @@
+.calender--sidebar {
+	width: 100%;
+	margin-top: 84px;
+	.calendar__day-box {
+		&:nth-child(7n+1) {
+			&.calendar__day-box--dotted {
+				.calender__cloud-wrap {
+					transform: translate(-10%);
+				}
+			}
+		}
+		&:nth-child(7n+2) {
+			&.calendar__day-box--dotted {
+				.calender__cloud-wrap {
+					transform: translate(-30%);
+				}
+			}
+		}
+		&:nth-child(7n+6) {
+			&.calendar__day-box--dotted {
+				.calender__cloud-wrap {
+					transform: translate(-70%);
+				}
+			}
+		}
+		&:nth-child(7n+7) {
+			&.calendar__day-box--dotted {
+				.calender__cloud-wrap {
+					transform: translate(-90%);
+				}
+			}
+		}
+	}
+	.calender__day-wrap {
+		&::after {
+			z-index: 1;
+		}
+	}
+	.calender__dot-wrap {
+		bottom: 5px;
+	}
+	.calender__day--current {
+		.calender__dot-wrap {
+			bottom: -9px;
+		}
+	}
+	.calender__dot {
+		width: 4px;
+		height: 4px;
+		margin: 0 1px;
+	}
+	.calender__cloud-wrap {
+		bottom: 34px;
+		z-index: 1;
+		ul {
+			line-height: 12px;
+			display: flex;
+			flex-direction: column;
+		}
+		li {
+			width: 193px;
+			white-space: initial;
+			padding: 0 9px;
+			margin-bottom: 5px;
+			position: relative;
+			color: $black;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 2px;
+				border-radius: 50%;
+				background-color: $black;
+				left: 2px;
+				top: 6px;
+			}
+			&:first-child {
+				margin-top: 6px;
+			}
+			&:last-child {
+				margin-bottom: 8px;
+			}
+			.calender__cloud-text {
+				color: rgba($black, 0.8);
+			}
+		}
+		.calender__cloud-text {
+			display: inline;
+		}
+		b {
+			font-size: 10px;
+			color: $black;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 40px;
+		.calender__dot-wrap {
+			bottom: 6px;
+		}
+	}
+	@include media-breakpoint-down(xxs) {
+		.calender__dot-wrap {
+			bottom: 2px;
+		}
+	}
+	.card__title {
+		font-size: 21px;
+		width: 100%;
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}
+	}
+	.card__body {
+		margin-top: 13px;
+	}
+	.calendar__nav {
+		padding: 2px 0 10px 31px;
+		@include media-breakpoint-down(sm) {
+			padding: 17px 0 4px;
+		}
+	}
+	.card__body--calendar {
+		padding: 20px 16px 16px;
+		@include media-breakpoint-down(sm) {
+			padding: 24px 16px 16px;
+		}
+	}
+	.calendar__weeks-wrap {
+		@include media-breakpoint-down(sm) {
+			padding: 12px 5px 5px 4px;
+		}
+	}
+	.calender__day-wrap {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 10px;
+		@include media-breakpoint-down(xxs) {
+			width: 30px;
+			height: 30px;
+			&::after {
+				top: 1px
+			}
+			.calender__cloud-wrap {
+				bottom: 28px;
+			}
+		}
+	}
+	@include media-breakpoint-only(md) {
+		.calendar__day-box {
+			&:nth-child(7n+2) {
+				&.calendar__day-box--dotted {
+					.calender__cloud-wrap {
+						transform: translate(-50%);
+					}
+				}
+			}
+			&:nth-child(7n+6) {
+				&.calendar__day-box--dotted {
+					.calender__cloud-wrap {
+						transform: translate(-50%);
+					}
+				}
+			}
+		}
+	}
+}

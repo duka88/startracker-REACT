@@ -1,0 +1,50 @@
+.card--avatar-change {
+	margin-top: 64px;
+	@include  media-breakpoint-down(sm) {
+		margin-top: 65px;
+	}
+}
+.card__body--avatar-change {
+	height: 390px;
+	@include  media-breakpoint-down(sm) {
+		margin: 25px 5px 0 0;
+		height: 340px;
+	}
+}
+.avatar-change__form {
+	@include make-center;
+	margin: 38px auto 0;
+	width: 100%;
+	max-width: 300px;
+	@include  media-breakpoint-down(sm) {
+		margin: 25px auto 0;
+	}
+}
+.avatar-change__img-wrap {
+	width: 150px;
+	height: 150px;
+	border-radius: 20px;
+	background-color: $grey-7;
+	@include  media-breakpoint-down(sm) {
+		width: 110px;
+		height: 110px;
+	}
+}
+.avatar-change__button-wrap {
+	@include make-between;
+	width: 100%;
+	margin-top: 84px;
+	@include  media-breakpoint-down(sm) {
+		margin-top: 46px;
+
+		.button {
+			width: 100%;
+		}
+	}
+}
+.avatar-change__label {
+	@include  media-breakpoint-down(sm) {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

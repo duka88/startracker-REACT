@@ -1,0 +1,121 @@
+//----------  variables
+//------------------------------------------------------------------------------
+
+$font-default: 'Gilroy-Regular', sans-serif;
+$gilroy-black: 'Gilroy-Black', sans-serif;
+$gilroy-medium: 'Gilroy-Medium', sans-serif;
+$gilroy-bold: 'Gilroy-Bold', sans-serif;
+
+// Colors
+$white: #fff;
+$black: #0a2524;
+$black-1: #000;
+$grey: #f6f7fb;
+$grey-2: #d4d7da;
+$grey-3: #667180;
+$grey-4: #b5b5b5;
+$grey-5: #878787;
+$grey-6: #edeff3;
+$grey-7: #d8d8d8;
+$grey-8: #d5d5d5;
+$grey-9: #b5b3bd;
+$green: #7cc9c2;
+$green-2: #dff0ee;
+$green-3: #cbe7e7;
+$green-dark: #2f797a;
+$green-hover: #569294;
+$green-medium: #318c8c;
+$yellow: #f6c320;
+$yellow-2: #fbf8ee;
+$yellow-3: #f7ebcf;
+$red: #f17e7e;
+$red-2: #e64845;
+$red-3: #fed9d9;
+$red-4: #f4cdcf;
+$red-5: #f05a29;
+$orange: #f28024;
+$shadow: 10px 2px 20px -2px rgba(0, 0, 0, 0.1);
+$overlay: rgba(0, 0, 0, 0.8);
+
+
+
+
+$site-colors: (
+	'black': $black,
+	'white': $white
+) !default;
+
+//----------  Bootstrap grid
+//------------------------------------------------------------------------------
+
+$enable-grid-classes: true !default;
+
+//----------  Media queries breakpoints - Grid breakpoint
+//------------------------------------------------------------------------------
+
+$grid-breakpoints: (
+	xxs: 0,
+	xs: 360px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1281px,
+	xxl: 1441px
+) !default;
+
+//----------  Grid containers
+//------------------------------------------------------------------------------
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+) !default;
+
+//----------  Grid columns
+//------------------------------------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+//----------  Default animation setups
+//------------------------------------------------------------------------------
+
+$speed-fast: 0.5s;
+$speed-faster: 0.3s;
+$speed-medium: 1s;
+$speed-slow: 2s;
+
+$default-beziers: ease-out;
+
+$default-transition: $speed-faster $default-beziers;
+
+//----------  Font sizes
+//------------------------------------------------------------------------------
+
+$font-size-x-small: 11px;
+$font-size-small: 12px;
+$font-size-normal: 14px;
+$font-size-medium: 18px;
+$font-size-x-medium: 23px;
+$font-size-x-large: 32px;
+
+//----------  Font weights
+//------------------------------------------------------------------------------
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$title-size: 27px;
+$subtitle-size: 18px;
+
+//----------  Shadows
+//------------------------------------------------------------------------------
+$global-box-shadow: 0 2px 6px 0 rgba(69, 73, 91, 0.08);
+
+//----------  Transitions
+//------------------------------------------------------------------------------
+$duration: 0.25s;
+$durless: 0.12s;
+$ease: ease;

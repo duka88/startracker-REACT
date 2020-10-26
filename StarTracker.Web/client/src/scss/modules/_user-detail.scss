@@ -1,0 +1,128 @@
+.user-detail {
+	width: 100%;
+	border-radius: 20px;
+	background-color: $green-dark;
+	@include make-start;
+	align-items: center;
+	margin-top: 7px;
+	padding: 46px 53px 55px 54px;
+	position: relative;
+	overflow: hidden;
+	@include media-breakpoint-down(sm) {
+		justify-content: center;
+		margin-top: -2px;
+		border-radius: 8px;
+		padding: 46px 14px 72px;
+	}
+}
+.user-detail__img {
+	width: 85px;
+	height: 85px;
+	border-radius: 20px;
+	z-index: 2;
+	@include media-breakpoint-down(sm) {
+		width: 70px;
+		height: 70px;
+		border-radius: 8px;
+	}
+}
+.user-detail__text-wrap {
+	color: $white;
+	font-family: $font-default;
+	max-width: 420px;
+	margin-left: 40px;
+	z-index: 2;
+	@include media-breakpoint-down(sm) {
+		margin-left: 0;
+		text-align: center;
+	}
+}
+.user-detail__title {
+	font-size: 35px;
+	font-family: $font-default;
+	margin-bottom: 12px;
+	font-weight: 400;
+	@include media-breakpoint-down(sm) {
+		margin: 13px 0 4px;
+		font-size: 31px;
+	}
+}
+.user-detail__text {
+	font-size: 16px;
+	line-height: 1.31;
+	font-weight: 400;
+	@include media-breakpoint-down(sm) {
+		font-size: 14px;
+	}
+}
+.user-detail__moon {
+	background-image: url('/assets/images/moon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	right: 253px;
+	width: 180px;
+	height: 103px;
+	position: absolute;
+	@include media-breakpoint-down(sm) {
+		background-image: url('/assets/images/moon-mob.png');
+		bottom: 0;
+		right: 53px;
+		width: 228px;
+		height: 84px;
+		top: unset;
+	}
+}
+.user-detail__earth {
+	background-image: url('/assets/images/earth.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 109px;
+	height: 32px;
+	top: 0;
+	right: 57px;
+	position: absolute;
+	@include media-breakpoint-down(sm) {
+		background-image: url('/assets/images/earth-mob.png');
+		width: 50px;
+		height: 115px;
+		top: 67px;
+		right: 0;
+	}
+}
+.user-detail__venus {
+	background-image: url('/assets/images/venus.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 311px;
+	height: 132px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	@include media-breakpoint-down(sm) {
+		background-image: url('/assets/images/venus-mob.png');
+		top: 0;
+		left: 0;
+		right: unset;
+		width: 104px;
+		height: 115px;
+	}
+}
+.user-detail__activity-title {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 82px;
+	@include media-breakpoint-down(sm) {
+		font-weight: 400;
+		margin-top: 38px;
+	}
+}
+.user-detail__activities {
+	margin-top: 18px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 22px;
+	}
+}

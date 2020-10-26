@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 65" width="77" height="65">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-716 -449L724 -449L724 1077L-716 1077Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #f4f4f4 } 
+	</style>
+	<g id="Dashboard" clip-path="url(#cp1)">
+		<g id="Calendar">
+			<g id="Calendar">
+				<g id="Group 2">
+					<g id="hover">
+						<path id="Combined Shape" class="shp0" d="M23 13.69L47 13.69C51.42 13.69 55 17.26 55 21.69L55 30.69C55 35.11 51.42 38.69 47 38.69L23 38.69C18.58 38.69 15 35.11 15 30.69L15 21.69C15 17.26 18.58 13.69 23 13.69ZM35 41.69L29 35.69L41 35.69L35 41.69Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,44 @@
+.achievements--sidebar {
+	width: 100%;
+	margin-top: 6px;
+}
+.achivments__user {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 16px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 12px;
+	}
+}
+.card__body--achievements-sidebar {
+	@include make-between;
+	padding: 25px 21px 40px 18px;
+	@include media-breakpoint-down(sm) {
+		padding: 29px 21px 40px;
+	}
+}
+.achievement__card--small {
+	width: 47%;
+	padding: 10px;
+	justify-content: start;
+	align-items: center;
+	margin-top: 14px;
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+		margin-top: 9px;
+	}
+	.achievement__card-points-wrap {
+		width: 30px;
+	}
+	.achievement__card-icon-wrap {
+		height: 30px;
+	}
+	.achievement__card-title {
+		margin-left: 10px;
+		font-size: 10px;
+		max-width: calc(100% - 40px);
+	}
+	.achievement__card-icon {
+		width: 15px;
+	}
+}

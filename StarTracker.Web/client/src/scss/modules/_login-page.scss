@@ -1,0 +1,68 @@
+.login {
+	background-color: $green-dark;
+	width: 100%;
+	height: 100vh;
+	@include make-between;
+}
+.login__side-wrap {
+	width: 50%;
+	@include make-center;
+	align-items: center;
+	padding: 97px 63px 315px 73px;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+.login__side-inner {
+	@include make-center;
+	align-items: flex-start;
+	max-height: 381px;
+}
+.login__image {
+	width: 290px;
+	height: 290px;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-name: levitate;
+}
+.login__title-wrap {
+	position: relative;
+	transform: rotate(-1deg);
+	width: 100%;
+	height: 132px;
+	margin-top: -43px;
+}
+.login__red-box {
+	border-radius: 20px;
+	padding: 27px 69px 33px;
+	background-color: $red-5;
+	position: relative;
+	height: 100%;
+	z-index: 2;
+	@include media-breakpoint-down(lg) {
+		padding: 27px 20px 33px;
+	}
+}
+.login__title {
+	font-family: $gilroy-bold;
+	font-size: 30px;
+	line-height: 1.2;
+	color: $white;
+	text-align: center;
+	max-width: 480px;
+	margin: 0 auto;
+	@include media-breakpoint-down(lg) {
+		font-size: 24px;
+	}
+}
+.login__orange-box {
+	position: absolute;
+	width: 86%;
+	height: 87px;
+	transform: rotate(-3deg);
+	border-radius: 20px;
+	background-color: $orange;
+	bottom: -31px;
+	right: 40px;
+	z-index: 1;
+}

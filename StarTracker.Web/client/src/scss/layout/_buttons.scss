@@ -1,0 +1,43 @@
+//----------  button
+//------------------------------------------------------------------------------
+a,
+button {
+	appearance: none;
+	outline: none;
+	@include media-breakpoint-up(lg) {
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+.button {
+	border-radius: 8px;
+	background-color: $green-dark;
+	color: $white;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	padding: 0 27px;
+	height: 40px;
+	line-height: 39px;
+	transition: background-color $duration $ease;
+	@include hover {
+		background-color: $green-hover;
+	}
+}
+.button--grey {
+	background-color: $grey-7;
+	@include hover {
+		background-color: $grey-7;
+	}
+}

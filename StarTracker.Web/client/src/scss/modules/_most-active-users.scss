@@ -1,0 +1,30 @@
+.active-users {
+	padding: 36px 0 0;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+.active-users__title {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 29px;
+}
+.active-users__user {
+	@include make-start;
+	align-items: center;
+	margin: 0 0 19px 50px;
+}
+.active-users__img {
+	width: 41px;
+	height: 41px;
+	border-radius: 8px;
+}
+.active-users__link {
+	margin-left: 14px;
+	text-decoration: underline;
+	color: $black;
+	@include hover {
+		text-decoration: none;
+	}
+}

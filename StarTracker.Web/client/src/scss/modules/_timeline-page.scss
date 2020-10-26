@@ -1,0 +1,24 @@
+.timeline__activities {
+	margin-top: 49px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 37px;
+	}
+}
+.timeline__pagination {
+	font-size: 14px;
+	text-decoration: underline;
+	cursor: pointer;
+	text-align: center;
+	color: $grey-5;
+	margin-top: 32px;
+}
+.timeline__activities-date {
+	font-size: 14px;
+	color: $grey-4;
+	font-weight: 500;
+	margin-left: 20px;
+	font-family: $font-default;
+	@include media-breakpoint-down(sm) {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,155 @@
+.activity-card {
+	width: 100%;
+	border-radius: 20px;
+	background-color: rgba($grey, 0.5);
+	border: 1px solid $grey-6;
+	padding: 20px 30px;
+	margin: 16px 0 20px;
+	@include media-breakpoint-down(sm) {
+		border-radius: 8px;
+		padding: 20px 14px 15px;
+	}
+}
+.activity-card__user-wrap {
+	@include make-start;
+	align-items: center;
+}
+.activity-card__img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: relative;
+	@include media-breakpoint-down(sm) {
+		width: 30px;
+		height: 30px;
+	}
+}
+.activity-card__user-name {
+	font-family: $gilroy-bold;
+	font-size: 16px;
+	margin: 0 0 5px 17px;
+	a {
+		color: $black;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 14px;
+	}
+	@include media-breakpoint-down(xxs) {
+		font-size: 12px;
+		margin: 0 0 5px 10px;
+	}
+}
+.activity-card__list {
+	list-style: disc;
+	margin: 3px 0 0 64px;
+	@include media-breakpoint-down(sm) {
+		margin: 11px 0 2px 16px;
+		font-size: 12px;
+	}
+}
+.activity-card__list-item {
+	list-style: disc;
+	margin: 0 0 4px -2px;
+	@include media-breakpoint-down(sm) {
+		margin: 0 0 8px -2px;
+	}
+}
+.activity-card__devider {
+	width: 100%;
+	height: 1px;
+	background-color: $grey-6;
+	margin: 24px 0 19px;
+}
+.activity-card__congrats-wrap {
+	@include make-start;
+	align-items: center;
+}
+.activity-card__icon {
+	width: 23px;
+	margin-left: 9px;
+	cursor: pointer;
+	polygon {
+		transition: 0.2s ease-in-out;
+		transition-property: fill;
+	}
+	path {
+		transition: 0.2s ease-in-out;
+		transition-property: fill;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 17px;
+		margin-left: 0;
+	}
+}
+.activity-card__icon--inactiv {
+	polygon {
+		fill: $grey;
+	}
+	path {
+		fill: $grey-5;
+	}
+}
+.activity-card__congrats {
+	margin-left: 7px;
+	font-size: 12px;
+	color: $grey-5;
+	@include media-breakpoint-down(sm) {
+		font-size: 10px;
+		margin-left: 12px;
+	}
+	@include media-breakpoint-down(xxs) {
+		margin-left: 8px;
+	}
+}
+.activity-card__likes-wrap {
+	margin-left: 27px;
+	display: flex;
+}
+.activity-card__img-holder {
+	position: relative;
+	&:not(:last-child) {
+		margin-right: -10px;
+	}
+	@include hover {
+		.activity-card__congrat-name {
+			opacity: 1;
+		}
+	}
+}
+.activity-card__congrat-name {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	white-space: nowrap;
+	background: $white;
+	padding: 0px 5px;
+	border-radius: 8px;
+	transform: translateX(-50%);
+	bottom: 39px;
+	border: 1px solid $grey-6;
+	transition: opacity $durless;
+	pointer-events: none;
+}
+.activity-card__liked-count {
+	margin: 5px 0 0 11px;
+	font-size: 12px;
+	@include media-breakpoint-down(sm) {
+		font-size: 10px;
+		margin: 0 0 0 16px;
+	}
+	@include media-breakpoint-down(xxs) {
+		margin: 0 0 0 10px;
+	}
+}
+.activity-card__img--liked {
+	width: 30px;
+	height: 30px;
+	margin-left: -10px;
+	&:first-child {
+		margin: 0;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 20px;
+		height: 20px;
+	}
+}

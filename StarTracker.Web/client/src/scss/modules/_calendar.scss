@@ -1,0 +1,194 @@
+.card__body--calendar {
+	padding: 40px 40px 19px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 18px;
+		padding: 19px 19px 14px;
+	}
+	@include media-breakpoint-down(xxs) {
+		padding: 10px;
+		border-radius: 15px;
+	}
+}
+.calendar__head {
+	@include make-between;
+	.card__head {
+		width: calc(100% - 100px);
+	}
+}
+.calendar__nav {
+	@include make-between;
+	width: 93px;
+	padding: 2px 34px 0 0;
+	align-items: flex-end;
+	@include media-breakpoint-down(sm) {
+		width: 59px;
+		margin-top: -3px;
+		padding: 0;
+	}
+}
+.calendar__arrow {
+	width: 24px;
+	height: 24px;
+	background: $grey;
+	@include make-center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.calendar__arrow-img--right {
+	transform: rotate(180deg);
+}
+.calendar__weeks-wrap {
+	@include make-between;
+	padding: 12px 19px 6px 12px;
+	@include media-breakpoint-down(md) {
+		padding: 12px 0 5px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 12px 11px 5px 8px;
+	}
+}
+.calendar__week {
+	font-size: 12px;
+	color: $yellow;
+	@include media-breakpoint-down(md) {
+		width: 13.3%;
+		text-align: center;
+	}
+}
+.calender__week-wrap {
+	@include make-between;
+	align-items: center;
+	margin-bottom: 15px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 13px;
+	}
+}
+.calender__days {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.calendar__day-box {
+	width: 13.3%;
+	@include make-center;
+	align-items: center;
+}
+.calender__day-wrap {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	@include make-center;
+	align-items: center;
+	font-size: 14px;
+	color: $grey-4;
+	cursor: pointer;
+	margin-bottom: 15px;
+	transition: background-color $durless $ease;
+	border-radius: 50%;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		border-top: 5px solid $white;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		top: 5px;
+		display: none;
+	}
+	&:hover {
+		&::after {
+			display: block;
+		}
+		&:not(.calender__day--current) {
+			background-color: rgba($yellow, 0.2);
+		}
+		.calender__cloud-wrap {
+			display: block;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		width: 38px;
+		height: 38px;
+		font-size: 12px;
+		margin-bottom: 13px;
+		.calender__cloud-wrap {
+			bottom: 32px;
+		}
+	}
+	@include media-breakpoint-down(xxs) {
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		&::after {
+			top: 1px
+		}
+		.calender__cloud-wrap {
+			bottom: 28px;
+		}
+	}
+}
+.calender__day--current {
+	background-color: $yellow;
+	color: $black-1;
+	.calender__dot-wrap {
+		bottom: -9px;
+	}
+}
+.calender__day--active {
+	color: $black-1;
+}
+.calender__dot-wrap {
+	position: absolute;
+	width: 100%;
+	bottom: 6px;
+	left: 0;
+	@include make-center;
+	@include media-breakpoint-down(sm) {
+		bottom: 4px;
+	}
+	@include media-breakpoint-down(xxs) {
+		width: 90%;
+		bottom: 0;
+	}
+}
+.calender__day {
+	width: 100%;
+	text-align: center;
+}
+.calender__dot {
+	width: 5px;
+	height: 5px;
+	margin: 0 2px;
+	border-radius: 50%;
+	@include media-breakpoint-down(sm) {
+		width: 4px;
+		height: 4px;
+		margin: 0 1px;
+	}
+}
+.calender__dot--ps {
+	background-color: $yellow;
+}
+.calender__dot--ts {
+	background-color: $green;
+}
+.calender__dot--mvp {
+	background-color: $red;
+}
+.calender__cloud-wrap {
+	position: absolute;
+	bottom: 44px;
+	display: none;
+	border-radius: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: $white;
+	padding: 5px 7px;
+	box-shadow: 3px 5px 17px 1px rgba(177,188,199,0.35);
+	white-space: nowrap;
+}
+.calender__cloud-text {
+	font-size: 10px;
+	color: rgba(10, 37, 36, 0.32);
+}

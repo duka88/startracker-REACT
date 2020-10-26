@@ -1,0 +1,176 @@
+.unlocked-mvp--mvp-response {
+	&.unlocked-mvp {
+		position: fixed;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(25, 25, 25, 0.7);
+		padding-top: 15.8vh;
+		padding-bottom: 15.8vh;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow-y: auto;
+		
+		@include media-breakpoint-down(sm) {
+			.mvp__card {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.unlocked-mvp__container {
+    max-width: 600px;
+    background-color: $white;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.unlocked-mvp__header {
+    padding: 25px 66px 21px;
+    text-align: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        padding: 25px 40px 21px;
+    }
+}
+.unlocked-mvp__close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-41%);
+    right: 37px;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 1px;
+        background-color: $grey-9;
+    }
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+    @include media-breakpoint-down(sm) {
+        right: 24px;
+        transform: translateY(-40%);
+    }
+    @media (max-width: 400px) {
+        right: 14px;
+    }
+}
+.unlocked-mvp__header-title {
+    display: block;
+    font-family: $gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+.unlocked-mvp__body {
+    background-color: $grey;
+    padding: 0px 20px 56px;
+    border-radius: 20px;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+        padding: 26px 20px 37px;
+    }
+    
+    .mvp__card {
+        max-width: 395px;
+        margin: 0 auto;
+        border: 1px solid $grey-8;
+        border-radius: 20px;
+        background-color: rgba($white, 0.5);
+        display: block;
+		padding: 24px 20px 23px;
+        .mvp__card-text-wrap {
+            text-align: left;
+        }
+        
+        .mvp__card-note {
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 14px;
+            margin-bottom: 17px;
+        }
+        .mvp__card-note-strong {
+            font-family: $gilroy-bold;
+        }
+        .mvp__card-date-label,
+        .mvp__card-date {
+            display: block;
+        }
+        .mvp__card-date-label {
+            color: $grey-5;
+            font-family: $gilroy-bold;
+            font-size: 10px;
+            letter-spacing: 1.33px;
+            line-height: 12px;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+        .mvp__card-date {
+            font-family: $gilroy-medium;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+}
+.unlocked-mvp__icon {
+    display: inline-block;
+    margin-bottom: 15px;
+    svg {
+        width: 45px;
+        height: 45px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 43px;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.unlocked-mvp__note {
+    display: block;
+    font-family: $gilroy-bold;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 11px;
+    @include media-breakpoint-down(sm) {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 8px;
+    }
+}
+.unlocked-mvp__title {
+    font-family: $gilroy-medium;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 26px;
+    font-weight: normal;
+    @include media-breakpoint-down(sm) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 38px;
+    }
+}
+.unlocked-mvp__cta {
+    color: $green-dark;
+    text-decoration: underline;
+    @include hover {
+        text-decoration: none;
+    }
+}

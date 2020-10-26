@@ -1,0 +1,74 @@
+.card--edit-user {
+	margin-top: 64px;
+	@include  media-breakpoint-down(sm) {
+		margin-top: 40px;
+	}
+}
+.card__head--edit-user {
+	@include  media-breakpoint-down(sm) {
+		text-align: center;
+		padding-right: 9px;
+	}
+}
+.card__body--edit-user {
+	margin-top: 27px;
+	padding: 27px 40px 41px;
+	@include  media-breakpoint-down(sm) {
+		margin-top: 27px;
+		margin-right: 5px;
+		padding: 27px 20px;
+	}
+}
+.edit-user__row {
+	@include make-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.edit-user__label {
+	width: 100%;
+	font-size: 14px;
+	font-family: $gilroy-bold;
+	padding-left: 10px;
+	margin-top: 3px;
+}
+.edit-user__input {
+	width: 100%;
+	border-radius: 8px;
+	background-color: $grey-6;
+	border: 0;
+	outline: none;
+	font-size: 14px;
+	color: $grey-3;
+	text-transform: capitalize;
+	margin-top: 8px;
+	&::placeholder {
+		font-size: 14px;
+		color: $grey-3;
+		font-family: $font-default;
+	 }
+ }
+.edit-user__input--textarea {
+	height: 90px;
+	padding: 15px;
+ }
+.edit-user__input--select {
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0;
+	border-radius: 5px;
+	background:  no-repeat right $grey-6;
+	height: 40px;
+	padding: 0 14px;
+	background-position: right 14px bottom 13px;
+}
+.button--edit-user {
+	margin-top: 46px;
+	padding: 0 44px;
+	height: 39px;
+	@include  media-breakpoint-down(sm) {
+		text-align: center;
+		width: 100%;
+	}
+ }

@@ -1,0 +1,161 @@
+.modal {
+	width: 90%;
+	max-width: 540px;
+	position: absolute;
+	top: -2000px;
+	left: 50%;
+	transform: translate(-50% , 0);
+	border-radius: 20px;
+	background-color: $white;
+	z-index: 3;
+	transition: 0.4s ease-in-out;
+	transition-property: top;
+	overflow: hidden;
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+	::-webkit-scrollbar-track {
+		background: $grey;
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $grey-4;
+		border-radius: 10px;
+	}
+}
+.modal--visible {
+	top: 148px;
+	@include media-breakpoint-down(md) {
+		top: 88px;
+	}
+}
+.popup__header {
+	font-family: $font-default;
+	font-weight: 400;
+	padding: 15px 20px;
+	position: relative;
+}
+.modal__close {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-40%);
+	width: 17px;
+	cursor: pointer;
+}
+.modal__title {
+	font-size: 18px;
+	text-align: center;
+	@include media-breakpoint-down(sm) {
+		font-size: 16px;
+	}
+}
+.modal__date {
+	font-size: 10px;
+	text-align: center;
+	margin-top: 4px;
+}
+
+.modal__body {
+	border-radius: 20px;
+	background-color: $grey;
+	padding: 46px 52px 27px;
+	overflow-y: auto;
+	.edit-user__confirmation {
+		margin: 0 auto;
+	}
+	//max-height: 70vh;
+	@include media-breakpoint-down(md) {
+		padding: 35px 12px 27px;
+	}
+	@include media-breakpoint-only(md) {
+		.edit-user__confirmation {
+			max-width: calc(100% - 30px);
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		.edit-user__confirmation {
+			max-width: 300px;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.edit-user__confirmation {
+			max-width: calc(100% - 60px);
+		}
+	}
+}
+
+.modal__button-wrap {
+	@include make-start;
+	align-items: center;
+	margin-top: 37px;
+	@include media-breakpoint-down(sm) {
+		padding: 3px 13px 0 4px;
+	}
+}
+.button--modal {
+	padding: 0 43px;
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+.modal__button-cancel {
+	margin-left: 22px;
+	font-family: $font-default;
+	font-weight: 400;
+	color: $grey-5;
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+		font-size: 15px;
+		margin: 22px 0 0 ;
+		font-family: $gilroy-medium;
+	}
+}
+.modal__error-card {
+	border: 1px solid $red;
+	background-color: $red-3;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 42px;
+	width: 93%;
+	margin: 42px auto 30px;
+	padding: 20px 65px 12px;
+	@include media-breakpoint-down(sm) {
+		padding: 19px 27px 32px;
+		width: 94%;
+		margin: 8px 4px 30px;
+	}
+}
+.modal__error-icon {
+	border: 2px solid $black;
+	border-radius: 50%;
+	width: 31px;
+	height: 31px;
+	line-height: 24px;
+	font-size: 19px;
+	font-family: $gilroy-bold;
+	margin: 0 auto;
+}
+.modal__error-title {
+	margin-top: 18px;
+	font-size: 17px;
+	line-height: 19px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 25px;
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+.modal__error-text {
+	margin-top: 20px;
+	font-size: 15px;
+	line-height: 19px;
+}
+.modal__button-wrap--error {
+	justify-content: center;
+	margin-top: 47px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 32px;
+	}
+}
